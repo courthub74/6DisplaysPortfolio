@@ -1,0 +1,133 @@
+// FONTS
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Julius+Sans+One&family=Roboto:wght@900&display=swap');
+// COLORS
+$mainblue: #080E2F;
+$skillswhite: #FFFFFF;
+$aboutgreen: #0E4946;
+$skillsteal: #146166;
+$iconblock: #023430;
+$languagewhite: #d9e2e2;
+$techcirclegreen: #05607D;
+$hoverfonts: #B7BCD6;
+$experiencegreen: #255C5A;
+
+// BUTTON COLORS
+$learnmorebutton: #EBEBEB;
+$experiencegreenbutton: #476D6B;
+
+// DISPLAY SQAURES COLORS
+$portfolios: #36395D;
+$experiences: #496b69;
+$experiencestwo: #476D6B;
+
+// BOX SHADOW
+$boxshadowcircles: rgba(0, 0, 0, 0.521);
+
+// FOOTER
+$firstblue: #58a6ff;
+$secondblue: #6287cf;
+$thirdblue: rgb(85, 85, 255);
+$smallsgrey: #757782;
+
+// SOCIALS
+$socialsgrey: #B7BCD6;
+
+
+
+// MOBILE VERSIONS
+
+// Main Mobile Version (0px to 500px)
+@media screen and (min-width: 376px) and (max-width: 500px) {
+    * {
+        margin: 0;
+        scroll-behavior: smooth;
+        scroll-snap-type: y mandatory;
+        body {
+                ///////////////////////////////////////////
+            /// 
+            /// MOBILE
+            // MAIN MOBILE DISPLAY TO SHOW
+            #mainmobilecontainer {
+                background-color: black;
+                color: white;
+            }
+            // SMALL MOBILE TO DISPLAY FOR NOW
+            #smallmobilecontainer {
+                display: none;
+            }
+            
+            ////////////////////////////////////////////////
+            /// 
+            /// TABLET
+            /// MAIN TABLET TO BE HIDDEN
+            #maintabletcontainer {
+                display: none;
+            }
+            // SMALL TABLET TO BE HIDDEN
+            #smalltabletcontainer {
+                display: none;
+            }
+
+            ////////////////////////////////////////////////
+            /// 
+            /// DESKTOP
+            /// MAIN DESKTOP TO BE HIDDEN
+            #maindesktopcontainer {
+                display: none;
+            }
+            // SMALL DESKTOP TO BE HIDDEN
+            #smalldesktopcontainer {
+                display: none;
+            }
+        }
+    }
+}
+
+
+// SMALL MOBILE DISPLAY
+// Small Mobile Version (0px to 375px)
+@media screen and (max-width: 375px) {
+    * {
+        margin: 0;
+        scroll-behavior: smooth;
+        scroll-snap-type: y mandatory;
+        body {
+                ///////////////////////////////////////////
+            /// 
+            /// MOBILE
+            // MAIN MOBILE DISPLAY TO SHOW
+            #mainmobilecontainer {
+                display: none;
+            }
+            // SMALL MOBILE TO DISPLAY FOR NOW
+            #smallmobilecontainer {
+                background-color: blue;
+                color: white;
+            }
+            
+            ////////////////////////////////////////////////
+            /// 
+            /// TABLET
+            /// MAIN TABLET TO BE HIDDEN
+            #maintabletcontainer {
+                display: none;
+            }
+            // SMALL TABLET TO BE HIDDEN
+            #smalltabletcontainer {
+                display: none;
+            }
+
+            ////////////////////////////////////////////////
+            /// 
+            /// DESKTOP
+            /// MAIN DESKTOP TO BE HIDDEN
+            #maindesktopcontainer {
+                display: none;
+            }
+            // SMALL DESKTOP TO BE HIDDEN
+            #smalldesktopcontainer {
+                display: none;
+            }
+        }
+    }
+}
