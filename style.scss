@@ -87,13 +87,13 @@ $socialsgrey: #B7BCD6;
                         }
                         // Hamburger clicked
                         // Makes them X
-                        .hamburgermobile.is-active:before {
+                        .hamburgermobilemain.is-active:before {
                             transform: rotate(-45deg) translate(-1px, 20px);
                         }
-                        .hamburgermobile.is-active:after {
+                        .hamburgermobilemain.is-active:after {
                             transform: rotate(45deg) translate(-1px, -20px);
                         }
-                        .hamburgermobile.is-active .barmobile {
+                        .hamburgermobilemain.is-active .barmobilemain {
                             opacity: 0;
                         }
                         .barmobilemain {

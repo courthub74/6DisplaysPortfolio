@@ -2,7 +2,7 @@
 
 window.onload = function () {
     window.addEventListener('scroll', function (e) {
-        console.log("Do I need this?")
+        console.log("Do I need this?");
     });
 
     //////////////////////// MOBILE MENU SCRIPT /////////////////////////////////

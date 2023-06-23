@@ -46,13 +46,13 @@
     border-radius: 10px;
     transition: 0.4s;
   }
-  * body #mainmobilecontainer #mainhomemobile .tophomemobilemain .hamburgermobile.is-active:before {
+  * body #mainmobilecontainer #mainhomemobile .tophomemobilemain .hamburgermobilemain.is-active:before {
     transform: rotate(-45deg) translate(-1px, 20px);
   }
-  * body #mainmobilecontainer #mainhomemobile .tophomemobilemain .hamburgermobile.is-active:after {
+  * body #mainmobilecontainer #mainhomemobile .tophomemobilemain .hamburgermobilemain.is-active:after {
     transform: rotate(45deg) translate(-1px, -20px);
   }
-  * body #mainmobilecontainer #mainhomemobile .tophomemobilemain .hamburgermobile.is-active .barmobile {
+  * body #mainmobilecontainer #mainhomemobile .tophomemobilemain .hamburgermobilemain.is-active .barmobilemain {
     opacity: 0;
   }
   * body #mainmobilecontainer #mainhomemobile .tophomemobilemain .barmobilemain {
