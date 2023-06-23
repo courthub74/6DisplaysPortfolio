@@ -5,9 +5,110 @@
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
   }
-  * body #mainmobilecontainer {
-    background-color: black;
+  * body #mainmobilecontainer #mainhomemobile {
+    background-color: #080E2F;
     color: white;
+    height: 100vh;
+  }
+  * body #mainmobilecontainer #mainhomemobile .tophomemobilemain {
+    display: flex;
+    justify-content: space-between;
+  }
+  * body #mainmobilecontainer #mainhomemobile .tophomemobilemain .logomobilemain {
+    margin: 3vh 0 0 4vw;
+  }
+  * body #mainmobilecontainer #mainhomemobile .tophomemobilemain .logomobilemain img {
+    width: 25vw;
+    height: 25vw;
+  }
+  * body #mainmobilecontainer #mainhomemobile .tophomemobilemain .hamburgermobilemain {
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    margin: 5vh 7vw 0 0;
+    z-index: 100;
+  }
+  * body #mainmobilecontainer #mainhomemobile .tophomemobilemain .hamburgermobilemain:after, * body #mainmobilecontainer #mainhomemobile .tophomemobilemain .hamburgermobilemain:before {
+    content: "";
+    display: block;
+    width: 10vw;
+    height: 0.7vh;
+    background-color: white;
+    margin: 1vh 0;
+    border-radius: 10px;
+    transition: 0.4s;
+  }
+  * body #mainmobilecontainer #mainhomemobile .tophomemobilemain .hamburgermobile.is-active:before {
+    transform: rotate(-45deg) translate(-1px, 20px);
+  }
+  * body #mainmobilecontainer #mainhomemobile .tophomemobilemain .hamburgermobile.is-active:after {
+    transform: rotate(45deg) translate(-1px, -20px);
+  }
+  * body #mainmobilecontainer #mainhomemobile .tophomemobilemain .hamburgermobile.is-active .barmobile {
+    opacity: 0;
+  }
+  * body #mainmobilecontainer #mainhomemobile .tophomemobilemain .barmobilemain {
+    content: "";
+    display: block;
+    width: 10vw;
+    height: 0.7vh;
+    background-color: white;
+    margin: 1vh 0;
+    border-radius: 10px;
+  }
+  * body #mainmobilecontainer #mainhomemobile .nav-mobile-main-home {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100vh;
+    display: block;
+    z-index: 98;
+    background-color: #080E2F;
+    margin: 0 0 0 0;
+    transition: 0.8s;
+  }
+  * body #mainmobilecontainer #mainhomemobile .nav-mobile-main-home .mobilelogomain {
+    margin: 5vh 15vw 0 0;
+  }
+  * body #mainmobilecontainer #mainhomemobile .nav-mobile-main-home .mobilelogomain img {
+    margin: -2vh 0 0 5vw;
+    width: 25vw;
+    height: 25vw;
+  }
+  * body #mainmobilecontainer #mainhomemobile .nav-mobile-main-home .mobilelistmain a {
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 5vw;
+    font-weight: bold;
+    margin: 4vh 0 0 10vw;
+  }
+  * body #mainmobilecontainer #mainhomemobile .nav-mobile-main-home .slidesocialsmobilemain {
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    margin: 5vh 0 0 9vw;
+  }
+  * body #mainmobilecontainer #mainhomemobile .nav-mobile-main-home .slidesocialsmobilemain img {
+    width: 8vw;
+    height: 8vw;
+  }
+  * body #mainmobilecontainer #mainhomemobile .nav-mobile-main-home a:hover {
+    color: #757782;
+  }
+  * body #mainmobilecontainer #mainhomemobile .nav-mobile-main-home.is-active {
+    left: 0;
   }
   * body #smallmobilecontainer {
     display: none;
@@ -19,9 +120,6 @@
     display: none;
   }
   * body #maindesktopcontainer {
-    display: none;
-  }
-  * body #smalldesktopcontainer {
     display: none;
   }
 }
@@ -34,9 +132,10 @@
   * body #mainmobilecontainer {
     display: none;
   }
-  * body #smallmobilecontainer {
+  * body #smallmobilecontainer #smallhomemobile {
     background-color: blue;
     color: white;
+    height: 100vh;
   }
   * body #maintabletcontainer {
     display: none;
@@ -47,7 +146,76 @@
   * body #maindesktopcontainer {
     display: none;
   }
-  * body #smalldesktopcontainer {
+}
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+  * {
+    margin: 0;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+  }
+  * body #mainmobilecontainer {
     display: none;
+  }
+  * body #smallmobilecontainer {
+    display: none;
+  }
+  * body #maintabletcontainer #mainhometablet {
+    background-color: red;
+    color: white;
+    height: 100vh;
+  }
+  * body #smalltabletcontainer {
+    display: none;
+  }
+  * body #maindesktopcontainer {
+    display: none;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 700px) {
+  * {
+    margin: 0;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+  }
+  * body #mainmobilecontainer {
+    display: none;
+  }
+  * body #smallmobilecontainer {
+    display: none;
+  }
+  * body #maintabletcontainer {
+    display: none;
+  }
+  * body #smalltabletcontainer #smallhometablet {
+    background-color: purple;
+    color: white;
+    height: 100vh;
+  }
+  * body #maindesktopcontainer {
+    display: none;
+  }
+}
+@media screen and (min-width: 1000px) {
+  * {
+    margin: 0;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+  }
+  * body #mainmobilecontainer {
+    display: none;
+  }
+  * body #smallmobilecontainer {
+    display: none;
+  }
+  * body #maintabletcontainer {
+    display: none;
+  }
+  * body #smalltabletcontainer {
+    display: none;
+  }
+  * body #maindesktopcontainer #mainhomedesktop {
+    background-color: #023430;
+    color: white;
+    height: 100vh;
   }
 }/*# sourceMappingURL=style.css.map */

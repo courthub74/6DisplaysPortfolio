@@ -43,13 +43,122 @@ $socialsgrey: #B7BCD6;
         scroll-behavior: smooth;
         scroll-snap-type: y mandatory;
         body {
-                ///////////////////////////////////////////
+            ////////////////////////////////////////////////
             /// 
             /// MOBILE
             // MAIN MOBILE DISPLAY TO SHOW
             #mainmobilecontainer {
-                background-color: black;
-                color: white;
+                #mainhomemobile {
+                    background-color: $mainblue;
+                    color: white;
+                    height: 100vh;
+                    .tophomemobilemain {
+                        display: flex;
+                        justify-content: space-between;
+                        .logomobilemain {
+                            margin: 3vh 0 0 4vw;
+                            img {
+                                width: 25vw;
+                                height: 25vw;
+                            }
+                        }
+                        .hamburgermobilemain {
+                            position: relative;
+                            display: block;
+                            width: 60px;
+                            height: 60px;
+                            cursor: pointer;
+                            appearance: none;
+                            background: none;
+                            outline: none;
+                            border: none;
+                            margin: 5vh 7vw 0 0;
+                            z-index: 100;
+                        }
+                        .hamburgermobilemain:after, .hamburgermobilemain:before {
+                            content: '';
+                            display: block;
+                            width: 10vw;
+                            height: .7vh;
+                            background-color: white;
+                            margin: 1vh 0;
+                            border-radius: 10px;
+                            transition: 0.4s;
+                        }
+                        // Hamburger clicked
+                        // Makes them X
+                        .hamburgermobile.is-active:before {
+                            transform: rotate(-45deg) translate(-1px, 20px);
+                        }
+                        .hamburgermobile.is-active:after {
+                            transform: rotate(45deg) translate(-1px, -20px);
+                        }
+                        .hamburgermobile.is-active .barmobile {
+                            opacity: 0;
+                        }
+                        .barmobilemain {
+                            content: '';
+                            display: block;
+                            width: 10vw;
+                            height: .7vh;
+                            background-color: white;
+                            margin: 1vh 0;
+                            border-radius: 10px;
+                        }
+                    }
+                    .nav-mobile-main-home {
+                        position: fixed;
+                        top: 0;
+                        left: 100%;
+                        width: 100%;
+                        height: 100vh;
+                        display: block;
+                        z-index: 98;
+                        background-color: $mainblue;
+                        margin: 0 0 0 0;
+                        transition: .8s;
+                        .mobilelogomain {
+                            margin: 5vh 15vw 0 0;
+                            // background-color: #023430;
+                            img {
+                                margin: -2vh 0 0 5vw;
+                                width: 25vw;
+                                height: 25vw;
+                            }
+                        }
+                        .mobilelistmain {
+                            a {
+                                display: block;
+                                text-align: left;
+                                text-decoration: none;
+                                color: white;
+                                font-family: 'Inter', sans-serif;
+                                font-size: 5vw;
+                                font-weight: bold;
+                                margin: 4vh 0 0 10vw;
+                            }
+                        }
+                        .slidesocialsmobilemain {
+                            // background-color: #023430;
+                            display: flex;
+                            flex-direction: row;
+                            gap: 2vw;
+                            margin: 5vh 0 0 9vw;
+                            img {
+                                width: 8vw;
+                                height: 8vw;
+                            }
+                        }
+                    }
+                    .nav-mobile-main-home a:hover {
+                        color: $smallsgrey;
+                    }
+                    .nav-mobile-main-home.is-active {
+                        left: 0;
+                    }
+                    // Need to set a CSS state that makes the
+                    // menu evaporate
+                }
             }
             // SMALL MOBILE TO DISPLAY FOR NOW
             #smallmobilecontainer {
@@ -73,10 +182,6 @@ $socialsgrey: #B7BCD6;
             /// DESKTOP
             /// MAIN DESKTOP TO BE HIDDEN
             #maindesktopcontainer {
-                display: none;
-            }
-            // SMALL DESKTOP TO BE HIDDEN
-            #smalldesktopcontainer {
                 display: none;
             }
         }
@@ -101,8 +206,11 @@ $socialsgrey: #B7BCD6;
             }
             // SMALL MOBILE TO DISPLAY FOR NOW
             #smallmobilecontainer {
-                background-color: blue;
-                color: white;
+                #smallhomemobile {
+                    background-color: blue;
+                    color: white;
+                    height: 100vh;
+                }
             }
             
             ////////////////////////////////////////////////
@@ -124,9 +232,146 @@ $socialsgrey: #B7BCD6;
             #maindesktopcontainer {
                 display: none;
             }
-            // SMALL DESKTOP TO BE HIDDEN
-            #smalldesktopcontainer {
+        }
+    }
+}
+
+//////////////////////////////////////////////////////////////
+
+// TABLET VERSIONS
+
+// MAIN TABLET DISPLAY
+// Main Tablet Version (from 500px to 1000px)
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+    * {
+        margin: 0;
+        scroll-behavior: smooth;
+        scroll-snap-type: y mandatory;
+        body {
+            ///////////////////////////////////////////////
+            /// 
+            /// MOBILE
+            // MAIN MOBILE DISPLAY TO SHOW
+            #mainmobilecontainer {
                 display: none;
+            }
+            // SMALL MOBILE TO DISPLAY FOR NOW
+            #smallmobilecontainer {
+                display: none;
+            }
+            ////////////////////////////////////////////////
+            /// 
+            /// TABLET
+            /// MAIN TABLET TO BE HIDDEN
+            #maintabletcontainer {
+                #mainhometablet {
+                    background-color: red;
+                    color: white;
+                    height: 100vh;
+                }
+            }
+            // SMALL TABLET TO BE HIDDEN
+            #smalltabletcontainer {
+                display: none;
+            }
+            ////////////////////////////////////////////////
+            /// 
+            /// DESKTOP
+            /// MAIN DESKTOP TO BE HIDDEN
+            #maindesktopcontainer {
+                display: none;
+            }
+        }
+    }
+}
+
+
+// SMALL TABLET DISPLAY
+// Small Tablet Version (500px to 700px
+@media screen and (min-width: 500px) and (max-width: 700px) {
+    * {
+        margin: 0;
+        scroll-behavior: smooth;
+        scroll-snap-type: y mandatory;
+        body {
+            ///////////////////////////////////////////////
+            /// 
+            /// MOBILE
+            // MAIN MOBILE DISPLAY TO SHOW
+            #mainmobilecontainer {
+                display: none;
+            }
+            // SMALL MOBILE TO DISPLAY FOR NOW
+            #smallmobilecontainer {
+                display: none;
+            }
+            ////////////////////////////////////////////////
+            /// 
+            /// TABLET
+            /// MAIN TABLET TO BE HIDDEN
+            #maintabletcontainer {
+                display: none;
+            }
+            // SMALL TABLET TO BE HIDDEN
+            #smalltabletcontainer {
+                #smallhometablet {
+                    background-color: purple;
+                    color: white;
+                    height: 100vh;
+                }
+            }
+            ////////////////////////////////////////////////
+            /// 
+            /// DESKTOP
+            /// MAIN DESKTOP TO BE HIDDEN
+            #maindesktopcontainer {
+                display: none;
+            }
+        }
+    }
+}
+
+
+// MAIN DESKTOP DISPLAY
+// Main Desktop Version (0px to 1000px)
+@media screen and (min-width: 1000px) {
+    * {
+        margin: 0;
+        scroll-behavior: smooth;
+        scroll-snap-type: y mandatory;
+        body {
+            ///////////////////////////////////////////////
+            /// 
+            /// MOBILE
+            // MAIN MOBILE DISPLAY TO SHOW
+            #mainmobilecontainer {
+                display: none;
+            }
+            // SMALL MOBILE TO DISPLAY FOR NOW
+            #smallmobilecontainer {
+                display: none;
+            }
+            ////////////////////////////////////////////////
+            /// 
+            /// TABLET
+            /// MAIN TABLET TO BE HIDDEN
+            #maintabletcontainer {
+                display: none;
+            }
+            // SMALL TABLET TO BE HIDDEN
+            #smalltabletcontainer {
+                display: none;
+            }
+            ////////////////////////////////////////////////
+            /// 
+            /// DESKTOP
+            /// MAIN DESKTOP TO BE HIDDEN
+            #maindesktopcontainer {
+                #mainhomedesktop {
+                    background-color: #023430;
+                    color: white;
+                    height: 100vh;
+                }
             }
         }
     }
