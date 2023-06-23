@@ -90,25 +90,76 @@
     text-decoration: none;
     color: white;
     font-family: "Inter", sans-serif;
-    font-size: 5vw;
+    font-size: 6vw;
     font-weight: bold;
-    margin: 4vh 0 0 10vw;
+    margin: 4vh 0 0 9vw;
   }
   * body #mainmobilecontainer #mainhomemobile .nav-mobile-main-home .slidesocialsmobilemain {
     display: flex;
     flex-direction: row;
     gap: 2vw;
-    margin: 5vh 0 0 9vw;
+    margin: 5vh 0 0 8vw;
   }
   * body #mainmobilecontainer #mainhomemobile .nav-mobile-main-home .slidesocialsmobilemain img {
-    width: 8vw;
-    height: 8vw;
+    width: 10vw;
+    height: 10vw;
   }
   * body #mainmobilecontainer #mainhomemobile .nav-mobile-main-home a:hover {
     color: #757782;
   }
   * body #mainmobilecontainer #mainhomemobile .nav-mobile-main-home.is-active {
     left: 0;
+  }
+  * body #mainmobilecontainer #mainhomemobile .bothomemobilemain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5vh 0 0 0;
+  }
+  * body #mainmobilecontainer #mainhomemobile .bothomemobilemain .photomobilemain img {
+    border-radius: 50%;
+    width: 40vw;
+    height: 40vw;
+  }
+  * body #mainmobilecontainer #mainhomemobile .bothomemobilemain .nameheadmobilemain {
+    margin: 6vh 0 0 0;
+  }
+  * body #mainmobilecontainer #mainhomemobile .bothomemobilemain .nameheadmobilemain #namemobilemain {
+    font-size: 8vw;
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
+    color: #FFFFFF;
+  }
+  * body #mainmobilecontainer #mainhomemobile .bothomemobilemain .nameheadmobilemain #jobdescripmobilemain {
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    color: #B7BCD6;
+    font-size: 5vw;
+  }
+  * body #mainmobilecontainer #mainhomemobile .bothomemobilemain .catchphrasemobilemain {
+    margin: 10vh 0 0 0;
+    text-align: center;
+  }
+  * body #mainmobilecontainer #mainhomemobile .bothomemobilemain .catchphrasemobilemain #catchphrasemobilemain {
+    font-family: "Inter", sans-serif;
+    color: #FFFFFF;
+    font-size: 4vw;
+  }
+  * body #mainmobilecontainer #mainhomemobile .bothomemobilemain .portfoliobuttonmobilemain {
+    border: 1px solid #36395D;
+    border-radius: 30px;
+    background-color: #36395D;
+    padding: 2vw;
+    width: 50vw;
+    text-align: center;
+    margin: 15vh 0 0 0;
+  }
+  * body #mainmobilecontainer #mainhomemobile .bothomemobilemain .portfoliobuttonmobilemain a {
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    color: #FFFFFF;
+    font-size: 4vw;
   }
   * body #smallmobilecontainer {
     display: none;
