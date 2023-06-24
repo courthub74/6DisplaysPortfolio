@@ -214,6 +214,7 @@ $socialsgrey: #B7BCD6;
                         }
                     }
                 }
+                // ABOUT SECTION
                 #aboutmobilecontainer {
                     #mainaboutmobile {
                         background-color: $aboutgreen;
@@ -229,8 +230,100 @@ $socialsgrey: #B7BCD6;
                                     font-family: 'Inter', sans-serif;
                                 }
                             }
-                            // START HERE
+                            .hamburgermobileaboutmain {
+                                position: relative;
+                                display: block;
+                                width: 60px;
+                                height: 60px;
+                                cursor: pointer;
+                                appearance: none;
+                                background: none;
+                                outline: none;
+                                border: none;
+                                margin: 5vh 7vw 0 0;
+                                z-index: 100;
+                            }
+                            .hamburgermobileaboutmain:after, .hamburgermobileaboutmain:before {
+                                content: '';
+                                display: block;
+                                width: 10vw;
+                                height: .7vh;
+                                background-color: white;
+                                margin: 1vh 0;
+                                border-radius: 10px;
+                                transition: 0.4s;
+                            }
+                            // Hamburger clicked
+                            // Makes them X
+                            .hamburgermobileaboutmain.is-active:before {
+                                transform: rotate(-45deg) translate(-1px, 20px);
+                            }
+                            .hamburgermobileaboutmain.is-active:after {
+                                transform: rotate(45deg) translate(-1px, -20px);
+                            }
+                            .hamburgermobileaboutmain.is-active .aboutbarmobilemain {
+                                opacity: 0;
+                            }
+                            .aboutbarmobilemain {
+                                content: '';
+                                display: block;
+                                width: 10vw;
+                                height: .7vh;
+                                background-color: white;
+                                margin: 1vh 0;
+                                border-radius: 10px;
+                            }
                         }
+                        .nav-mobile-main-about {
+                            position: fixed;
+                            top: 0;
+                            left: 100%;
+                            width: 100%;
+                            height: 100vh;
+                            display: block;
+                            z-index: 98;
+                            background-color: $aboutgreen;
+                            margin: 0 0 0 0;
+                            transition: .8s;
+                            .mobilelogomainabout {
+                                margin: 5vh 15vw 0 0;
+                                // background-color: #023430;
+                                img {
+                                    margin: -2vh 0 0 5vw;
+                                    width: 25vw;
+                                    height: 25vw;
+                                }
+                            }
+                            .mobilelistmainabout {
+                                a {
+                                    display: block;
+                                    text-align: left;
+                                    text-decoration: none;
+                                    color: white;
+                                    font-family: 'Inter', sans-serif;
+                                    font-size: 6vw;
+                                    font-weight: bold;
+                                    margin: 4vh 0 0 9vw;
+                                }
+                            }
+                            .slidesocialsmobilemainabout {
+                                // background-color: #023430;
+                                display: flex;
+                                flex-direction: row;
+                                gap: 2vw;
+                                margin: 5vh 0 0 8vw;
+                                img {
+                                    width: 10vw;
+                                    height: 10vw;
+                                }
+                            }
+                        }
+                    }
+                    .nav-mobile-main-about a:hover {
+                        color: $smallsgrey;
+                    }
+                    .nav-mobile-main-about.is-active {
+                        left: 0;
                     }
                 }
             }
